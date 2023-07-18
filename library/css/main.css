@@ -21,13 +21,14 @@ font-family: 'Inter', sans-serif; */
     min-height: 90px;
     margin-bottom: 20px;
     
+  
 }
 
 .header a {
     color: #fff;
 }
 
-.container {
+.container { 
 }
 .header__top {
 }
@@ -98,13 +99,10 @@ font-family: 'Inter', sans-serif; */
 
 .header__base {
     height: 600px;
-    background-image: url(./../img/header/Welcome.png);
-    background-size: 1440px;
     padding-top: 220px;
-    text-align: center;
     
-
-
+    background-image: url(./../img/header/Welcome.png);
+    background-size: cover; 
 
 }
 .header__title {
@@ -115,12 +113,9 @@ font-family: 'Inter', sans-serif; */
     line-height: 50px; 
     letter-spacing: 3px;
     text-transform: uppercase;
+    text-align: center;
 
-    width: 600px;
-    height: 220px;
     background-color: #0C0C0E;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-right: 1200px;
+    
 }
