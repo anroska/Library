@@ -35,14 +35,128 @@
         <section class="about__block">
             <div class="container">
                 <h2 class="about__title">About</h2>
+                <div class="line"></div>
                 <p class="about__text">The Brooklyn Library is a free workspace, a large number of books and a cozy coffee shop inside </p>
                 <div class="about__slider">
-                    <img src="" alt="" class="slider__item">
-                    <img src="" alt="" class="slider__item">
-                    <img src="" alt="" class="slider__item">
-                    <img src="" alt="" class="slider__item">
-                    <img src="" alt="" class="slider__item">
+                    <div class="owl-carousel">
+                        <img src="./img/about/image 1.png" alt="" class="slider__item">
+                        <img src="./img/about/image 2.png" alt="" class="slider__item">
+                        <img src="./img/about/image 3.png" alt="" class="slider__item">
+                        <img src="./img/about/image 4.png" alt="" class="slider__item none">
+                        <img src="./img/about/image 5.png" alt="" class="slider__item none">
+                    </div>
+                    <button class="pagination"><img src="img/about/Carousel pagination.svg" alt=""></button>
                 </div>
+            </div>
+        </section>
+
+        <section class="favorites__block">
+            <div class="container">
+                <h2 class="favorites__title">Favorites</h2>
+                <div class="line"></div>
+                <p class="favorites__text">Pick favorites of season</p>   
+                <fieldset class="favorites__radiogroup">
+                    
+                    <label class="radio-label">
+                        <input type="radio" name="favorites" value="Winter" class="real-radio">
+                        <span class="custom__radio"></span>
+                        <span class="bold">Winter</span> 
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="favorites" value="Spring" class="real-radio">
+                        <span class="custom__radio"></span>
+                        <span class="bold">Spring</span> 
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="favorites" value="Summer" class="real-radio">
+                        <span class="custom__radio"></span>
+                        <span class="bold">Summer</span> 
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="favorites" value="Autumn" class="real-radio">
+                        <span class="custom__radio"></span>
+                        <span class="bold">Autumn</span> 
+                    </label>
+                  </fieldset>
+
+
+                  <ul class="favorites__list">
+                    <li class="favorites__item">
+                        <div class="item__book">
+                            <div class="text__item">
+                                <p class="text__book">Staff Picks</p>
+                                <div class="line__book"></div>
+                                <p class="name__book">The Book Eaters</p>
+                                <p class="author__book">By Sunyi Dean</p>
+                                <p class="description__book">
+                                    An unusual sci-fi story about a book eater woman who tries desperately to save her dangerous mind-eater son from tradition and certain death. Complete with dysfunctional family values, light Sapphic romance, and a strong, complex protagonist. Not for the faint of heart.       
+                                </p>
+                                <button class="btn__book">Buy</button>
+                            </div>
+                            <div class="img__item">
+                                <img src="./img/favorites/book-3.png" alt="The Book Eaters">
+                            </div>
+                        </div>
+                        
+                    </li>
+
+
+                    <li class="favorites__item">
+                        <div class="item__book">
+                            <div class="text__item">
+                                <p class="text__book">Staff Picks</p>
+                                <div class="line__book"></div>
+                                <p class="name__book">Cackle</p>
+                                <p class="author__book">By Rachel Harrison</p>
+                                <p class="description__book">
+                                    Are your Halloween movies of choice The Witches of Eastwick and Practical Magic? Look no further than here - where a woman recovering from a breakup moves to a quaint town in upstate New York and befriends a beautiful witch.
+                                </p>
+                                <button class="btn__book">Buy</button>
+                            </div>
+                            <div class="img__item">
+                                <img src="img/favorites/book-2.png" alt=" Cackle">
+                            </div>
+                         </div>
+                    </li>
+
+
+                    <li class="favorites__item">
+                        <div class="item__book">
+                            <div class="text__item">
+                                <p class="text__book">Staff Picks</p>
+                                <div class="line__book"></div>
+                                <p class="name__book">Dante: Poet of the Secular World</p>
+                                <p class="author__book">By Erich Auerbach</p>
+                                <p class="description__book">
+                                    Auerbach's engaging book places the 'Comedy' within the tradition of epic, tragedy, and philosophy in general, arguing for Dante's uniqueness as one who raised the individual and his drama of soul into something of divine significance—an inspired introduction to Dante's main themes.
+                                </p>
+                                <button class="btn__book">Buy</button>
+                            </div>
+                            <div class="img__item">
+                                <img src="./img/favorites/book-1.png" alt="Dante: Poet of the Secular World">
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="favorites__item">
+                        <div class="item__book">
+                            <div class="text__item">
+                                <p class="text__book">Staff Picks</p>
+                                <div class="line__book"></div>
+                                <p class="name__book">The Last Queen</p>
+                                <p class="author__book">By Clive Irving</p>
+                                <p class="description__book">
+                                    A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.
+                                </p>
+                                <button class="btn__book">Own</button>
+                            </div>
+                            <div class="img__item">
+                                <img src="./img/favorites/book.png" alt="The Last Queen">
+                            </div>
+                        </div>
+                    </li>
+                  </ul>
             </div>
         </section>
     </main>
