@@ -5,7 +5,7 @@ font-family: 'Inter', sans-serif; */
 
 :root {
     --container-width: 1400px;
-    --container-padding: 20px;
+    --container-padding: 20px 0px 0px;
 }
 
 .container {
@@ -18,8 +18,7 @@ font-family: 'Inter', sans-serif; */
 
 .header {
     background-color: #0C0C0E;
-    min-height: 90px;
-    margin-bottom: 20px;
+    min-height: 690px;
     
   
 }
@@ -35,7 +34,8 @@ font-family: 'Inter', sans-serif; */
 .nav {
     display: flex;
     justify-content: space-between;  
-    align-items: center;
+    margin: 0px 20px 0px;
+    
     
 }
 .nav__logo {
@@ -48,7 +48,6 @@ font-family: 'Inter', sans-serif; */
     letter-spacing: 0.6px;
 }
 .nav__list {
-    
     display: flex;
     column-gap: 30px;
 
@@ -66,7 +65,7 @@ font-family: 'Inter', sans-serif; */
 .nav__list a.active::after,
 .nav__list a:hover::after {
     content: "";
-
+    
     position: absolute;
     left: 0; 
     right: 10px;
@@ -83,8 +82,14 @@ font-family: 'Inter', sans-serif; */
 }
 
 .user__btn img {
+    display: inline-block;
     width: 28px;
     height: 28px;
+}
+
+.user__btn:active {
+    position: relative;
+    top: 2px
 }
 
 .user__btn {
@@ -100,11 +105,10 @@ font-family: 'Inter', sans-serif; */
 .header__base {
     height: 600px;
     padding-top: 220px;
-    
     background-image: url(./../img/header/Welcome.png);
-    background-size: cover; 
-
 }
+
+
 .header__title {
     color: #FFF;
     font-family: Forum, cursive;
@@ -112,10 +116,26 @@ font-family: 'Inter', sans-serif; */
     font-weight: 400;
     line-height: 50px; 
     letter-spacing: 3px;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     text-align: center;
+    padding-top: 35px;
 
     background-color: #0C0C0E;
-    margin-right: 1200px;
-    
+    width: 600px;
+    height: 220px;
+}
+
+
+/* ABOUT BLOCK /*
+
+.about__block {
+}
+
+.about__title {
+}
+.about__text {
+}
+.about__slider {
+}
+.slider__item {
 }
