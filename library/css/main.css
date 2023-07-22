@@ -5,7 +5,10 @@ font-family: 'Inter', sans-serif; */
 
 :root {
     --container-width: 1400px;
-    --container-padding: 20px 20px 0px 20px;
+    --container-padding: 20px;
+    --color: #0C0C0E;
+    --forum: 'Forum', cursive;
+    --iner: 'Inter', sans-serif;
 }
 
 .none {
@@ -21,7 +24,7 @@ font-family: 'Inter', sans-serif; */
 /*Header*/
 
 .header {
-    background-color: #0C0C0E;
+    background-color: var(--color);
     min-height: 690px;
     
   
@@ -46,7 +49,7 @@ font-family: 'Inter', sans-serif; */
 .nav__logo {
 }
 .logo {
-    font-family: Forum, cursive;
+    font-family: var(--forum);
     font-size: 30px;
     font-weight: 400;
     line-height: 50px; 
@@ -58,7 +61,7 @@ font-family: 'Inter', sans-serif; */
     column-gap: 30px;
 
 
-    font-family: Inter, sans-serif;
+    font-family: var(--iner);
     font-size: 20px;
     font-weight: 400;
     line-height: 50px; 
@@ -79,9 +82,14 @@ font-family: 'Inter', sans-serif; */
     
     display: block;
     /* width: 35px; */
-    height: 4px;
+    height: 1px;
     border-radius: 100px;
     background: #C4C4C4;
+}
+
+.nav__list a:active {
+    position: relative;
+    top: 2px;
 }
 
 .active {
@@ -118,7 +126,7 @@ font-family: 'Inter', sans-serif; */
 
 .header__title {
     color: #FFF;
-    font-family: Forum, cursive;
+    font-family: var(--forum);
     font-size: 40px;
     font-weight: 400;
     line-height: 50px; 
@@ -127,7 +135,7 @@ font-family: 'Inter', sans-serif; */
     text-align: center;
     padding-top: 35px;
 
-    background-color: #0C0C0E;
+    background-color: var(--color);
     width: 600px;
     height: 220px;
 }
@@ -145,37 +153,33 @@ font-family: 'Inter', sans-serif; */
 }
 
 .about__title {
-    color: #0C0C0E;
-    font-family: Forum;
+    color: var(--color);
+    font-family: var(--forum);
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    padding: 20px;
+
 
    
 }
 
 .line {
-    border-bottom: #0C0C0E 1px solid;
+    border-bottom: var(--color) 1px solid;
     width: 50px;
-    margin-left: 675px;
-    
-    
+    margin: 20px 0px 40px 675px;   
 }
 .about__text {
     color: #000;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 20px;
     font-weight: 400;
     line-height: 40px; 
-    margin-top: 40px;
 }
 .about__slider {
-    margin-top: 20px;
-    
+    margin-top: 20px;    
 }
 
 .owl-carousel {
@@ -201,20 +205,18 @@ font-family: 'Inter', sans-serif; */
 
 .favorites__title {
     color: #0C0C0E;
-    font-family: Forum;
+    font-family: var(--forum);
     font-size: 40px;
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    padding: 20px;
+
     text-align: center;
 }
 
 .favorites__text {
-    margin-top: 40px;
-
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 20px;
     font-weight: 700;
 }
@@ -225,7 +227,7 @@ font-family: 'Inter', sans-serif; */
     column-gap: 90px;
     margin-top: 40px;
 
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 20px;
     font-weight: 400;
 }
@@ -253,10 +255,10 @@ font-family: 'Inter', sans-serif; */
     margin: 15px 0px 15px 20px;
 }
 .text__book {
-    font-family: Forum;
+    font-family: var(--forum);
     font-size: 20px;
     font-weight: 400;
-    line-height: 40px; /* 200% */
+    line-height: 40px; 
     letter-spacing: 2px;
     text-transform: capitalize;
 }
@@ -266,7 +268,7 @@ font-family: 'Inter', sans-serif; */
     margin-bottom: 20px;
 }
 .name__book {
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 15px;
     font-weight: 700;
     line-height: 40px; 
@@ -274,7 +276,7 @@ font-family: 'Inter', sans-serif; */
     text-transform: uppercase;
 }
 .author__book {
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 15px;
     font-weight: 700;
     line-height: 40px;
@@ -283,7 +285,7 @@ font-family: 'Inter', sans-serif; */
 }
 .description__book {    
     width: 355px;
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 15px;
     font-weight: 400;
     line-height: 40px; 
@@ -291,16 +293,17 @@ font-family: 'Inter', sans-serif; */
     text-transform: capitalize;
 }
 .btn__book {
-    color: #0C0C0E;
+    color: var(--color);
     text-align: center;
-    font-family: Inter;
+    font-family: var(--iner);
     font-size: 10px;
     font-weight: 700;
     letter-spacing: 1px;
 
     border-radius: 2px;
-    border: 1px solid #0C0C0E;
+    border: 1px solid var(--color);
     padding: 9px 27px;  
+    
        
 }
 
@@ -356,5 +359,371 @@ font-family: 'Inter', sans-serif; */
     position: absolute;
     opacity: 0;
     z-index: -1;
+}
+
+/*SHOP BLOCK */
+
+
+.shop__block {
+    min-height: 841px;
+    padding: var(--container-padding);
+
+}
+
+.shop__title {
+    color: var(--color);
+    font-family: var(--forum);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-align: center;
+}
+.shop__text {
+    text-align: center;
+    font-family: var(--iner);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+
+    margin: 40px 0;
+}
+.shop__column {
+    width: 1400px;
+    display: flex;
+    column-gap: 480px;
+}
+.column__left {
+    
+   
+}
+.column__name {
+    color: #BB945F;
+    font-family: var(--forum);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.column__list {
+    display: flex;
+    align-items: end;   
+}
+
+.shop__list {
+    font-family: var(--iner);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.shop__item {
+    margin-top: 40px;
+}
+.shop__line {
+    border: #BB945F 1px solid;
+    width: 100px;
+    margin: 80px 59px 0 60px;
+    vertical-align: middle;                
+}
+
+.column__right {
+}
+
+
+/* CONTACTS BLOCK*/
+
+.contacts__block {
+    min-height: 575px;
+    padding: var(--container-padding);
+}
+.container {
+}
+.contacts__title {
+    color: var(--color);
+    text-align: center;
+    font-family: var(--forum);
+    font-size: 40px;
+    font-weight: 400;   
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.contacts__columns {
+    display: flex;
+    flex-direction: row;
+    column-gap: 201px;
+}
+.column__text {
+    font-family: var(--iner);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.column__text div {
+    margin-bottom: 20px;
+}
+
+.bold {
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.bold-two {
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.column__map {
+}
+
+
+/*CARDS BLOCK*/
+
+.cards__block {
+    min-height: 614px;
+    padding: var(--container-padding);
+}
+
+.cards__title {
+    color: var(--color);
+    text-align: center;
+    font-family: var(--forum);
+    font-size: 40px;
+    font-weight: 400;   
+    line-height: 40px; 
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.line {
+}
+.cards__columns {
+    display: flex;
+    column-gap: 344px;
+}
+.clmns__form {
+    
+}
+
+.clmns__title {    
+    font-family: var(--iner);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    padding-bottom: 30px;
+
+    padding-left: 158px;
+    
+}
+.form {
+    width: 600px;
+    height: 386px;
+
+    border: 3px solid #BB945F;
+    background: #FFF;
+}
+.form__title {
+    padding: 20px;
+
+    font-family: var(--forum);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+
+}
+.form__group {
+    margin: 20px;
+    background: #BB945F;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__input {
+    margin: 0px 20px 25px 20px;
+
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 8px 318px 8px 20px;
+
+    color: #8E8E8E;
+    font-family: var(--forum);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+.form__number {
+    margin: 0px 20px 25px 20px;
+
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    background: #FFF;
+    padding: 8px 318px 8px 20px;
+
+    color: #8E8E8E;
+    font-family: var(--forum);
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.6px;
+}
+.form__btn {
+    color: var(--color);
+    font-family: var(--iner);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    padding: 10px 40px;
+
+    margin-left: 179px;
+    position: relative;
+}
+
+.form__btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.form__btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #BB945F;
+    transition: all .35s;
+  }
+  
+  .form__btn:hover{
+    color: #cccccc;
+  }
+  
+  .form__btn:hover:after{
+    width: 100%;
+  }
+
+  .form__btn:active {
+    position: relative;
+    top:2px;
+  }
+
+
+.clmns__text {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 35px;
+}
+
+.clmns__text-tlt {
+    font-family: var(--forum);
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+
+.clms_text-txt {
+    font-family: var(--iner);
+    text-align: end;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+}
+
+.btn {
+    color: var(--color);
+    text-align: center;
+    font-family: var(--iner);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+   
+}
+
+
+.card__btn-sign {
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    padding: 9px 15.5px;
+    margin-right:20px ;
+}
+
+.card__btn-sign:active {
+    position: relative;
+    top:2px;
+}
+
+.card__btn-log {
+    border-radius: 2px;
+    border: 1px solid #0C0C0E;
+    padding: 9px 20px;
+}
+
+.card__btn-log:active {
+    position: relative;
+    top:2px;
+}
+
+
+/*FOOTER*/
+
+.footer {
+    margin-top: 20px;
+   
+    color: #fff;
+
+    font-family: var(--iner);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;   
+}
+.columns__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--container-padding);
+    min-height: 140px;  
+    background-color: #000;
+}
+
+.column__one {
+}
+.text__footer {
+    width: 229px;
+    margin-bottom: 10px;
+}
+.icons__footer {
+    display: flex;
+    column-gap: 15px;
+}
+.colum__two {
+    width: 149PX;
+    text-align: end;
+    
+}
+.schedule {
+   
 }
 
