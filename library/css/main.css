@@ -3,6 +3,12 @@
 /* font-family: 'Forum', cursive;
 font-family: 'Inter', sans-serif; */
 
+
+* {
+     transition-duration: .5s;
+}
+
+
 :root {
     --container-width: 1400px;
     --container-padding: 20px;
@@ -11,6 +17,11 @@ font-family: 'Inter', sans-serif; */
     --iner: 'Inter', sans-serif;
 }
 
+
+
+html {
+    scroll-behavior:smooth;
+}
 .none {
 	display: none !important;
 }
@@ -302,9 +313,23 @@ font-family: 'Inter', sans-serif; */
 
     border-radius: 2px;
     border: 1px solid var(--color);
-    padding: 9px 27px;  
-    
-       
+    padding: 9px 27px;     
+}
+
+.btn__book:hover {
+    background: #BB945F;
+    color: #c7c5c5;
+}
+
+.btn__book:active {
+    position: relative;
+    top: 2px;
+}
+
+.btn__book-active {
+    padding: 9px 27px;   
+    color: #BB945F ; 
+    border: 1px solid #BB945F;
 }
 
 .item__book{
@@ -472,6 +497,10 @@ font-family: 'Inter', sans-serif; */
 
 .column__text div {
     margin-bottom: 20px;
+}
+
+.column__text a {
+    color: #000;
 }
 
 .bold {
@@ -671,6 +700,12 @@ font-family: 'Inter', sans-serif; */
     margin-right:20px ;
 }
 
+
+.card__btn-sign:hover {
+    background: #BB945F;
+    color: #c7c5c5;
+}
+
 .card__btn-sign:active {
     position: relative;
     top:2px;
@@ -680,6 +715,11 @@ font-family: 'Inter', sans-serif; */
     border-radius: 2px;
     border: 1px solid #0C0C0E;
     padding: 9px 20px;
+}
+
+.card__btn-log:hover {
+    background: #BB945F;
+    color: #c7c5c5;
 }
 
 .card__btn-log:active {

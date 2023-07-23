@@ -16,11 +16,11 @@
                     <h1 class="logo"><a href="#!">Brooklyn Public Library</a></h1>
                 </div>
                 <ul class="nav__list">
-                    <li><a href="#!">About</a></li>
-                    <li><a href="#!">Favorites</a></li>
-                    <li><a href="#!">Coffee shop</a></li>
-                    <li><a href="#!">Contact</a></li>
-                    <li><a href="#!">Library Card</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#favorites">Favorites</a></li>
+                    <li><a href="#shop">Coffee shop</a></li>
+                    <li><a href="#contacts">Contact</a></li>
+                    <li><a href="#card">Library Card</a></li>
                     <li><button type="button" class="user__btn"><img src="./img/header/user-solid.svg" alt=""></button></li>
                 </nav>
             </div>
@@ -32,7 +32,7 @@
     </header>
         
     <main>
-        <section class="about__block">
+        <section class="about__block" id="about">
             <div class="container">
                 <h2 class="about__title">About</h2>
                 <div class="line"></div>
@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="favorites__block">
+        <section class="favorites__block" id="favorites">
             <div class="container">
                 <h2 class="favorites__title">Favorites</h2>
                 <div class="line"></div>
@@ -149,7 +149,7 @@
                                 <p class="description__book">
                                     A timely and revelatory new biography of Queen Elizabeth (and her family) exploring how the Windsors have evolved and thrived as the modern world has changed around them.
                                 </p>
-                                <button class="btn__book">Own</button>
+                                <button class="btn__book-active">Own</button>
                             </div>
                             <div class="img__item">
                                 <img src="./img/favorites/book.png" alt="The Last Queen">
@@ -228,7 +228,7 @@
                                 <p class="description__book">
                                     A fascinating story of a teenage girl who marries a man twice her age with the promise to bring her to America. Her marriage is an opportunity for her family to eventually immigrate. For fans of Isabel Allende and Julia Alvarez.
                                 </p>
-                                <button class="btn__book">Own</button>
+                                <button class="btn__book-active">Own</button>
                             </div>
                             <div class="img__item">
                                 <img src="./img/favorites/book-12.png" alt="Dominicana">
@@ -307,7 +307,7 @@
                                 <p class="description__book">
                                     An epic saga of seven generations of one family encompasses the tumultuous history of Hawaii as a Hawaiian woman gathers her four granddaughters together in an erotic tale of villains and dreamers, queens and revolutionaries, lepers and healers.
                                 </p>
-                                <button class="btn__book">Own</button>
+                                <button class="btn__book-active">Own</button>
                             </div>
                             <div class="img__item">
                                 <img src="./img/favorites/book-8.png" alt="Shark Dialogues: A Novel">
@@ -386,7 +386,7 @@
                                 <p class="description__book">
                                     Exes Tegan and Sara find themselves chained together by hairballs of codependency. A father and child experience the shared trauma of giving birth to gods from their wounds.
                                 </p>
-                                <button class="btn__book">Own</button>
+                                <button class="btn__book-active">Own</button>
                             </div>
                             <div class="img__item">
                                 <img src="./img/favorites/book-4.png" alt="Slug: And Other Stories">
@@ -398,7 +398,7 @@
         </section>
 
 
-        <section class="shop__block">
+        <section class="shop__block" id="shop">
             <div class="container">
                 <h2 class="shop__title">Coffee shop</h2>
                 <div class="line"></div>
@@ -477,25 +477,25 @@
         </section>
 
         
-        <section class="contacts__block">
+        <section class="contacts__block" id="contacts">
             <div class="container">
                 <h2 class="contacts__title">Our Contacts</h2>
                 <div class="line"></div>
                 <div class="contacts__columns">
                     <div class="column__text">
                         <div class="bold">For all Library inquiries:</div>
-                        <div>Please call (617) 730-2370</div>
-                        <div>For TTY service, please call (617) 730-2370</div>
-                        <div>Putterham Library: (617) 730-2385</div>
+                        <div>Please call <a href="tel:(617) 730-2370">(617) 730-2370</a></div>
+                        <div>For TTY service, please call <a href="tel:(617) 730-2370">(617) 730-2370</a></div>
+                        <div>Putterham Library: <a href="tel:(617) 730-2385">(617) 730-2385</a></div>
                         <div class="bold-two">Senior Staff</div>
-                        <div>Library Director: <span class="bold">Amanda Hirst</span></div>
+                        <div>Library Director: <span class="bold"><a href="mailto:AmandaHirst@gmail.com">Amanda Hirst</a> </span></div>
                     </div>
                     <div class="column__map"><img src="./img/contacts/Rectangle 4.png" alt="map"></div>
                 </div>
             </div>
         </section>
 
-        <section class="cards__block">
+        <section class="cards__block" id="card">
             <div class="container">
                 <div class="cards__title">Digital Library Cards</div>
                 <div class="line"></div>
